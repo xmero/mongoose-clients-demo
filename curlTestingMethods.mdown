@@ -1,0 +1,20 @@
+
+
+###POST method to add a client
+
+`curl -i -X POST -H 'Content-Type: application/json' -d '{ "firstName": "Xavier", "lastName": "Meroño","age":"25", "adress": "C/Potato"}' http://localhost:3000/client`
+
+###GET method to find by ID
+
+`curl http://localhost:3000/client/58b6e7bab3a13c21b0f583e7`
+###DELETE method to delete by ID
+
+`curl -X "DELETE" http://localhost:3000/client/58b6e88d1e580b13a87758b1`
+
+###PUT method to update by ID
+
+`curl -i -X PUT -H 'Content-Type: application/json' -d '{ "firstName": "Guiuseppe", "lastName": "Otali","age":"29"}' http://localhost:3000/client/58b6ea33b31d7904b44c79cb`
+
+###GET all method to find all 
+
+`curl http://localhost:3000/clients`
